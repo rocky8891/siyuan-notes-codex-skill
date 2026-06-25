@@ -13,7 +13,7 @@ This skill is grounded in SiYuan's official API documentation from `siyuan-note/
 
 Use environment variables unless the user provides temporary values in the current task:
 
-- `SIYUAN_BASE_URL`: base URL of the user's SiYuan service
+- `SIYUAN_BASE_URL`: base URL of the user's SiYuan service; default local URL is `http://127.0.0.1:6806`
 - `SIYUAN_API_TOKEN`: API token from SiYuan settings
 
 Never write tokens, passwords, internal-only URLs, private keys, usernames, or personal note content into the skill, generated notes, logs, commits, or final summaries. Do not echo secrets back to the user.

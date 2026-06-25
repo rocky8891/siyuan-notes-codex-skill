@@ -23,9 +23,11 @@ C:\Users\<you>\.codex\skills\siyuan-notes
 Set these environment variables before using the CLI or asking Codex to operate SiYuan:
 
 ```powershell
-$env:SIYUAN_BASE_URL = "http://<your-siyuan-host>:6806"
+$env:SIYUAN_BASE_URL = "http://127.0.0.1:6806"
 $env:SIYUAN_API_TOKEN = "<your-api-token>"
 ```
+
+`http://127.0.0.1:6806` is the default local SiYuan service URL. Set `SIYUAN_BASE_URL` to another address only when connecting to a remote SiYuan service.
 
 Do not commit tokens, internal addresses, usernames, personal note content, or screenshots that expose private data. That is how keys learn to escape.
 

@@ -2,7 +2,7 @@
 """SiYuan HTTP API CLI for Codex skills.
 
 Configuration:
-  SIYUAN_BASE_URL   Base URL of the user's SiYuan service
+  SIYUAN_BASE_URL   Base URL of the user's SiYuan service, defaults to http://127.0.0.1:6806
   SIYUAN_API_TOKEN  API token, required unless --token is passed
 """
 from __future__ import annotations
@@ -182,7 +182,7 @@ def require_url(args: argparse.Namespace) -> str:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="SiYuan HTTP API helper")
-    parser.add_argument("--url", default=os.environ.get("SIYUAN_BASE_URL"))
+    parser.add_argument("--url", default=os.environ.get("SIYUAN_BASE_URL", "http://127.0.0.1:6806"))
     parser.add_argument("--token", default=os.environ.get("SIYUAN_API_TOKEN"))
     sub = parser.add_subparsers(dest="cmd", required=True)
 
