@@ -1,0 +1,7 @@
+interface:
+  display_name: "SiYuan Notes API"
+  short_description: "Manage SiYuan notes, blocks, documents, files, flashcards, and databases through the HTTP API."
+  default_prompt: "Use $siyuan-notes to search, read, create, update, or clean up content in my SiYuan workspace."
+
+policy:
+  allow_implicit_invocation: true
